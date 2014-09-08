@@ -1,0 +1,31 @@
+Date		Who		Start		Stop		Interruptions	Question			TimeOnTask	Comments
+9/02		VB		13.30		13.50		5		Activity 1- Preparing Laptop	15		Sign up for CCIS Account
+9/03		VB		20.45		21.00				Activity 1- Preparing Laptop	15		Download and Install Microsoft Office 365
+9/04		VB		16.55		17.05				Activity 1- Preparing Laptop	10		Sign up for Github
+9/04		VB		17.30		17.44		5		Activity 1- Preparing Laptop	11		Sign up for CS 5010 on piazza.com
+9/04		VB		18.00		18.20				Activity 1- Preparing Laptop	20		Download and install Racket
+9/05		VB		15.10		15.15				Activity 1- Preparing Laptop	05		Connect to NUWave
+
+9/06		VB		12.20		13.00		5+15		Activity 2- Exercise 1		20		Analysis and execution of Exercise 1
+9/06		VB		14.00		14.07				Activity 2- Exercise 2		07		Analysis and execution of Exercise 2
+9/06		VB		14.10		14.12				Activity 2- Exercise 3		12		Analysis and execution of Exercise 3
+9/06		VB		14.15		14.40		10		Activity 2- Exercise 4		15		Analysis and execution of Exercise 4
+9/06		VB		14.45		14.53				Activity 2- Exercise 3		08		Changes in result of Exercise 3. 
+9/06		VB		15.00		15.15				Activity 2- Exercise 5		15		Contract, purpose statement ,examples and definition.
+9/06		VB		15.15		15.25		2		Activity 2- Exercise 5		08		Defining the function
+9/06		VB		16.00		16.15				Activity 2- Exercise 6		15		Contract, purpose statement ,examples and definition.
+9/06		VB		16.15		16.30				Activity 2- Exercise 6		15		Defining the function
+9/06		VB		16.45		16.55		2		Activity 2- Exercise 7		08		Analysis and execution of Exercise 7
+9/06		VB		15.00		15.15		15		Activity 2- Exercise 8		15		Contract, purpose statement ,examples and definition.
+9/06		VB		15.15		15.25		10		Activity 2- Exercise 8		10		Defining the function
+9/07		VB		13.15		13.25				Activity 2- Exercise 10		10		Analysis of Exercise 10
+9/07		VB		13.25		13.35				Activity 2- Exercise 10		10		Contract, purpose statement ,examples and definition.
+9/07		VB		13.35		13.45				Activity 2- Exercise 10		10		Defining the function
+9/07		VB		14.30		14.55				Activity 2- Exercise 9		25		Analysis of Exercise 9
+
+
+Total Time on Activity 1 (minutes): 76
+Total Time on Activity 2 (minutes): 203
+TOTQ1 (hours and tenths ): 1.2
+TOTQ2 (hours and tenths ): 3.4
+	

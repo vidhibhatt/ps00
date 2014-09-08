@@ -1,0 +1,233 @@
+Ex 1: Write an expression whose value s the number of seconds in a leap year (a leap year has 366 days). Next, write 2 more expressions that have the same value.
+Solution:
+> (* 60 (* 60 (* 366 24)))
+31622400
+
+> (+ 2400 (* (/ 140 7) (* (sqrt 1000000) (* 93 17))))
+31622400
+
+> (+ (+ 12224 (* ( sqrt 289) (* (sqr 23) (/ 800 25))))
+ (* (- 79000 694) (sqr 20))
+ )
+31622400
+
+
+
+Ex 2: Write an expression that returns true if the result of 100/3 is greater than the result of (100 + 3) / (3 + 3) and false otherwise.
+Solution:
+> (> (/ 100 3) (/ (+ 100 3) (+ 3 3)))
+true
+
+Ex 3: Write the definition of a function that converts a temperature from degrees Fahrenheit to degrees Celsius. The formula for the conversion is C = (F-32) * (5/9) . The contract, purpose statement and examples for this function are:
+
+    ; f->c : Number -> Number
+    ; GIVEN: a temperature in degrees Fahrenheit as an argument
+    ; RETURNS: the equivalent temperature in degrees Celsius.
+    ; Examples:
+    ; (f->c 32)  => 0
+    ; (f->c 100) => 37.77777777777778
+
+Solution:
+(define (c f)
+  (* (- f 32) (/ 5 9))
+  )> (c 32)
+0> (c 100)
+37.7
+
+
+
+Ex 4: Define a function called tip that takes two arguments, a number representing the amount of a bill in dollars, and a decimal number between 0.0 and 1.0, representing the percentage of tip one wants to give (e.g. 0.15 = 15%). tip should return the amount of the tip in dollars. The contract, purpose statement, and examples of tip are the following:
+
+    ; tip : NonNegNumber Number[0.0,1.0] -> Number
+    ; GIVEN: the amount of the bill in dollars and the
+    ; percentage of tip
+    ; RETURNS: the amount of the tip in dollars.
+    ; Examples:
+    ; (tip 10 0.15)  => 1.5
+    ; (tip 20 0.17)  => 3.4
+
+Solution:
+(define (tip NonNegNumber Number)
+  
+  (if (and (>= Number 0.0 ) (<= Number 1.0 )) 
+      (* NonNegNumber Number) 
+      (string-append "Invalid")  
+      )
+)
+
+> (tip 10 0.15)
+1.5
+> (tip 20 0.17)
+3.4
+
+
+Ex 5: Define a function called sq that computes the square of a number. Write the contract, purpose statement, examples and definition of this function. Follow the examples of contracts and purpose statements above.
+
+Solution:
+
+; sq : Number -> Number
+; GIVEN : A number as an argument
+; RETURNS : the square of the number
+; Examples :
+; ( sq 3 ) => 9
+; ( sq 1.5 ) => 2.25
+; ( sq -4) => 16
+
+(define (sq Number) 
+  (* Number Number)
+  )
+
+> (sq 3)
+9
+> (sq 1.5)
+2.25
+> (sq -4)
+16
+
+6: One of the solutions of the quadratic equation is given by the formula:
+x_+ = \frac{-b + \sqrt {b^2-4ac}}{2a}
+
+Write the contract, purpose statement, examples, and definition of a function quadratic-root that takes as arguments a, b, and c, and computes the root of the corresponding quadratic equation. 
+
+Solution:
+
+
+; quadratic-root : a b c => Number
+; GIVEN : Arguments a b and c of the quadratic equation
+; RETURNS: The root of the the quadratic equation in Number
+; Examples :
+; (quadratic-root 1 -3 -4) => 4
+; (quadratic-root 1 2 1) => -1
+
+
+(define (quadratic-root a b c)
+  (/ ( - (sqrt(- (sqr b)(* 4 a c)))
+       b)
+    (* 2 a)
+    )
+  )
+
+> (quadratic-root 1 -3 -4)
+4
+> (quadratic-root 1 2 1)
+-1
+
+
+Ex 7: Define a function called circumference that computes the circumference of a circle. The contract, purpose statement, and usage of circumference are:
+
+    ; circumference : Number -> Number
+    ; GIVEN: the radius r of a circle 
+    ; RETURNS: its circumference, using the formula 2 * pi * r.
+    ; Examples:
+    ; (circumference 1)  =>  6.283185307179586 
+    ; (circumference 0)  =>  0
+
+(pi is a predefined constant in Racket) Test your function with at least the given examples.
+
+
+Solution:
+
+(define (circumference Number)
+  (* 2 pi Number)
+  )
+
+> (circumference 1)
+#i6.283185307179586
+> (circumference 0)
+0
+
+
+
+Ex 8: The area included in a circle of radius r is given by the formula pi * r^2. Using the interaction window of DrRacket as a calculator, compute the area included in circles of radius 1, 5, and 7.
+
+Write the contract, purpose statement, examples, and the definition of a function called circle-area that computes the area included in a circle of radius r, using the above formula. Use the three calculations you did above as your examples.
+
+Solution:
+
+; RETURNS : its area, using the formula pi * r^2.
+; Examples:
+; (cicle-area 1) => 3.141592653589793
+; (cicle-area 5) => 78.53981633974483
+; (cicle-area 7) => 153.93804002589985
+
+(define (circle-area Number)
+  (* pi (sqr Number))
+  )
+
+> (circle-area 1)
+3.141592653589793
+> (circle-area 5)
+78.53981633974483
+> (circle-area 7)
+153.93804002589985
+
+
+Ex 9: Find out what the operator remainder does by typing it in the definitions window, highlighting it, and pressing F1.
+
+Try applying remainder on some examples to make sure you understand what it does. (what is its difference with modulo?)
+
+Define a predicate even? that takes a number as an argument and returns true if this number is divisible by 2, and false otherwise. (You will probably need to use remainder or something similar in the implementation of even?.)
+
+Solution:
+
+The following information about remainder is displayed on highlighting it, and pressing F!.
+        (remainder x y) → integer
+
+      x : integer
+      y : integer
+
+Determines the remainder of dividing the first by the second integer (exact or inexact).
+
+    > (remainder 9 2)
+
+    1
+    > (remainder 3 4)
+
+    3
+
+; even : Number => boolean
+; GIVEN : A number as an argument
+; RETURNS : Boolean value true, if the number is divisible by 2 and false otherwise
+; Examples:
+; (even 5) => false
+; (even 72) => true
+
+(define (even a)
+  (cond
+    [(= 0 (remainder a 2)) true]
+    [else false]
+    )
+  )
+
+> (even 5)
+false
+> (even 72)
+true
+
+
+Ex 10: Define a function that takes three numbers as arguments and returns the sum of the two larger numbers. As always, write down contract, purpose statement, and examples.
+
+Solution:
+
+; sum => Number Number Number => Number
+; GIVEN : Three numbers as arguments
+; RETURNS : The sum of the two larger numbers
+; Examples :
+; (sum 4 1 10) => 14
+; (sum 10 4 1) => 14
+; (sum 1 10 4) => 14
+
+(define (sum a b c)
+  (cond 
+    [(and (> a c) (> b c ))(+ a b)]
+    [(and (> b a)(> c a))(+ b c)]
+    [(and(> c b)(> a b))(+ c a)]
+    )
+  )
+
+> (sum 4 1 10)
+14
+> (sum 10 4 1)
+14
+> (sum 1 10 4)
+14
