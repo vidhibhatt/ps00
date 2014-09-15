@@ -29,3 +29,36 @@ Total Time on Activity 2 (minutes): 203
 TOTQ1 (hours and tenths ): 1.2
 TOTQ2 (hours and tenths ): 3.4
 	
+
+
+
+Date		Who		Start		Stop		Interruptions	Question			TimeOnTask	Comments
+9/12		VB		14.50		15.00		5		Exercise 11			05		
+9/12		VB		15.00		15.05				Exercise 12			05		
+9/12		VB		15.05		15.10				Exercise 13			05		
+9/12		VB		15.10		15.15				Exercise 14			05		
+9/12		VB		15.15		15.20				Exercise 15			05		
+
+9/13		VB		11.10		11.25				Exercise 16			15		
+9/13		VB		11.25		11.45		10		Exercise 17			10		
+9/13		VB		12.00		12.15				Exercise 18			15		
+9/13		VB		12.15		12.30				Exercise 19			15		
+9/13		VB		12.30		12.50		5		Exercise 20			15		
+9/13		VB		14.45		15.05				Exercise 21			20		 
+9/13		VB		15.05		15.15				Exercise 22			10		
+9/13		VB		15.15		15.25		2		Exercise 23			08		
+9/13		VB		16.00		16.15				Exercise 24			15		
+9/13		VB		16.15		16.30				Exercise 25			15
+
+9/14		VB		14.45		15.00				Exercise 26			15
+9/14		VB		15.00		15.15				Exercise 27			15
+9/14		VB		15.15		15.30				Exercise 27.a			15
+9/14		VB		15.30		15.50				Exercise 30			20
+9/14		VB		16.00		16.20				Exercise 31			20
+9/14		VB		17.00		17.30				Exercise 32			30
+
+9/15		VB		12.00		2.00		45		Exercise 28,29			75		Analysis	
+
+Total Time on Exercises (minutes): 368
+
+TOTQ1 (hours and tenths ): 6.2
